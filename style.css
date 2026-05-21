@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+body{
+     background-image:url("images/bg.jpg");
+    background-size:cover;
+    background-position:center;
+    font-family:verdana, sans-serif;
+
+}
+.container{
+    width:95%;
+    margin:auto;
+    padding:50px;
+}
+
+
+.header{
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+    margin-top:30px;
+}
+
+.logo{
+    width: 150px;
+    height:150px;
+    border-radius:50px;
+    margin-right:15px;
+    flex-shrink:0;
+}
+
+.header h1{
+    flex:1;
+    font-size:clamp(2.5rem, 5vw, 4.5rem);
+    line-height:1.1;
+    font-weight:bold;
+    text-align:center;
+    color:white;
+}
+
+.place-card{
+    display:flex;
+    align-items:center;
+    margin-bottom:30px;
+}
+.left{
+    width:500px;
+    height:500px;
+    position:relative;
+}
+
+.left img{
+    width: 500px;
+    height:500px;
+    object-fit:middle;
+    border-radius:15px;
+    border:5px solid #dfe7f6;
+    box-shadow:2px 2px 8px blanchedalmond;
+}
+..container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 10px auto;
+  padding: 20px;
+  max-width: 900px;
+}
+
+
+.right{
+    width:auto;
+    max-width:900px;
+    height:400px;
+    background:rgba(255,255,255,.1);
+    padding: 15px;
+    border-radius:25px;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+
+.right h2{
+    text-align:left;
+    font-size:45px;
+    margin-bottom:10px;
+    margin-top:10px;
+    color:white;
+    font-weight:bold;
+    margin-left:10px;
+    margin-right:10px;
+    
+}
+
+.right p{
+    text-align:justify;
+    font-size: 24px;
+    line-height:1.5;
+    font-weight:normal;
+    margin-left:20px;
+    margin-right:20px;
+    color:white;
+}
+
+
+@media(max-width:768px)
+
+{.place-card{
+        flex-direction:column;    
+}
+.left{
+    width:100%;
+    text-align:center;
+    margin-bottom:10px;
+}
+.header{
+    flex-direction:column;
+}
+.logo{
+    margin-bottom:10px;
+    margin-right:0;
+    margin-left:10px;
+}
+.header h1{
+    font-size:10px;
+}
+}
